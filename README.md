@@ -90,7 +90,7 @@ Accepted for JLCL Volume 33 (2018), Issue 1: Special Issue on Automatic Text and
 
 ```
 @article{reul2018combining,
-  author = {Reul, Christian and Springmann, Uweand Wick, Christoph and Puppe, Frank},
+  author = {Reul, Christian and Springmann, Uwe and Wick, Christoph and Puppe, Frank},
   title = {Improving OCR Accuracy on Early Printed Books by combining Pretraining, Voting, and Active Learning},
   journal = {ArXiv e-prints},
   url = {https://arxiv.org/abs/1802.10038},
