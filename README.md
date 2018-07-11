@@ -1,7 +1,7 @@
 # mptv
 Tools necessary to perform a multi-fold pretrained voting approach utlizing OCRopus in order to significantly improve the achievable OCR error rate.  
 Please note that this code was only used to provide a proof of concept for the publications listed below including the output of several (unnecessary) intermediate results.
-In order to implement the concepts into an OCR workflow I **highly** recommend to use Christoph Wick's (@chwick) [Calamari](https://github.com/Calamari-OCR/calamari) which now natively supports cross fold training, confidence voting and pretraining.
+In order to efficiently implement the concepts into an OCR workflow it is **highly** recommend to use Christoph Wick's (@chwick) [Calamari](https://github.com/Calamari-OCR/calamari) (see [4]) which is under active development and natively supports cross fold training, confidence voting and pretraining.
 
 ## Installing
 
@@ -22,6 +22,8 @@ In order to implement the concepts into an OCR workflow I **highly** recommend t
 
 
 ## Usage
+
+### Use Calamari instead...
 
 ### mptv-setup_folds
 Input: image list (\*.png, \*.bin.png, \*.nrm.png, + corresponding GT (\*.gt.txt))  
@@ -80,3 +82,31 @@ Output: "Voting/Voted" folders containing voted \*.txts.
   pages = {38-51},
   url = {http://dx.doi.org/10.12685/027.7-5-1-169}
 }
+
+```
+### Combination
+[3] Reul, Springmann, Wick, Puppe. (2018). Improving OCR Accuracy on Early Printed Books by combining Pretraining, Voting, and Active Learning. 
+Accepted for JLCL Volume 33 (2018), Issue 1: Special Issue on Automatic Text and Layout Recognition. Available [online](http://0277.ch/ojs/index.php/cdrs_0277/article/view/169).
+
+```
+@article{reul2018combining,
+  author = {Reul, Christian and Springmann, Uweand Wick, Christoph and Puppe, Frank},
+  title = {Improving OCR Accuracy on Early Printed Books by combining Pretraining, Voting, and Active Learning},
+  journal = {ArXiv e-prints},
+  url = {https://arxiv.org/abs/1802.10038},
+  year = {2018}
+}
+
+```
+### Calamari
+[4] Wick, Reul, Puppe. (2018). Calamari - A High-Performance Tensorflow-based Deep Learning Package for Optical Character Recognition. Submitted to Digital Humanities Quarterly. Preprint available at [ArXiv e-prints](https://arxiv.org/abs/1807.02004).
+
+```
+@article{wick2018calamari,
+  title = {Calamari - A High-Performance Tensorflow-based Deep Learning Package for Optical Character Recognition},
+  author = {Wick, Christoph and Reul, Christian and Puppe, Frank},
+  journal = {ArXiv e-prints},
+  url = {https://arxiv.org/abs/1807.02004},
+  year = {2018}
+}
+```
